@@ -2,14 +2,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.weavedm</groupId>
-	<artifactId>oauth2.0-resource</artifactId>
+	<artifactId>oauth2.0-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+		
+
+
 		<dependency>
-			<groupId>org.apache.oltu.oauth2</groupId> 
-			<artifactId>org.apache.oltu.oauth2.resourceserver</artifactId>
-			<version>1.0.1</version> 
-		</dependency> 
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
+			<version>0.31</version>
+		</dependency>
+
 			<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
@@ -28,7 +32,7 @@
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
+			<artifactId>jstl</artifactId> 
 			<version>1.2</version>
 		</dependency>
 
@@ -109,7 +113,7 @@
 		</dependency>
 
 		<!--jackson -->
-		<dependency>
+		<dependency> 
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.2.3</version>
