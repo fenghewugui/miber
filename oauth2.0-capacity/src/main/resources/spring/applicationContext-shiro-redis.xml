@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 缓存管理器 -->
+    <bean id="cacheManager" class="com.weavedm.shiro.cache.RedisCacheManager">
+        <property name="redisManager" ref="redisManager"/>
+    </bean>
+    <bean id="redisManager" class="com.weavedm.shiro.cache.RedisManager">
+        <property name="host" value="${redis.host}"/>
+	    <property name="port" value="${redis.port}"/>
+	    <property name="expire" value="${redis.expire}"/>
+	    <property name="timeout" value="${redis.timeout}"/>
+	    <property name="password" value="${redis.password}"/>
+    </bean>
+</beans>
