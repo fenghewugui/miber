@@ -13,7 +13,7 @@ import com.weavedm.shiro.service.UserService;
 
 /**
  * <p>
- * User: Zhang Kaitao
+ * User: scl
  * <p>
  * Date: 14-1-28
  * <p>
@@ -47,7 +47,7 @@ public class UserRealm extends AuthorizingRealm {
 		// 交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配，如果觉得人家的不好可以自定义实现
 		SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(user.getUsername(), // 用户名
 				user.getPassword(), // 密码
-				ByteSource.Util.bytes(user.getSalt()), // salt=username+salt
+				ByteSource.Util.bytes(user.getUsername()+user.getSalt()), // salt=username+salt
 				getName() // realm name
 		);
 		return authenticationInfo;

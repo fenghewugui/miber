@@ -106,13 +106,12 @@ public class RedisCache<K, V> implements Cache<K, V> {
 	public V put(K key, V value) throws CacheException {
 		logger.debug("根据key从存储 key [" + key + "]");
 		 try {
-			 	cache.set(getByteKey(key), SerializeUtils.serialize(value));
+			 	cache.set(getByteKey(key), SerializeUtils.serialize(value),cache.getExpire());
 	            return value;
 	        } catch (Throwable t) {
 	            throw new CacheException(t);
 	        }
 	}
-
 	@Override
 	public V remove(K key) throws CacheException {
 		logger.debug("从redis中删除 key [" + key + "]");

@@ -120,7 +120,6 @@
 
 				/authorize=anon
 				/accessToken=anon
-				/userInfo=anon
 
 				/** = user
 			</value>

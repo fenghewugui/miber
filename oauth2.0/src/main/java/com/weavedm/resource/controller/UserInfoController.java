@@ -1,4 +1,4 @@
-package com.weavedm.shiro.controller;
+package com.weavedm.resource.controller;
 
 import org.apache.oltu.oauth2.common.OAuth;
 import org.apache.oltu.oauth2.common.error.OAuthError;
@@ -25,9 +25,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * <p>
- * User: Zhang Kaitao
+ * User: scl
  * <p>
- * Date: 14-2-16
+ * Date: 16-10-16
  * <p>
  * Version: 1.0
  */

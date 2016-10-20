@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * <p>User: Zhang Kaitao
+ * <p>User: scl
  * <p>Date: 14-2-17
  * <p>Version: 1.0
  */

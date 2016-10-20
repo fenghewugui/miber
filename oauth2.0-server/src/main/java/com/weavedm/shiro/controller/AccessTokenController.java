@@ -29,9 +29,9 @@ import com.weavedm.shiro.service.OAuthService;
 
 /**
  * <p>
- * User: Zhang Kaitao
+ * User: scl
  * <p>
- * Date: 14-2-16
+ * Date: 16-10-16
  * <p>
  * Version: 1.0
  */

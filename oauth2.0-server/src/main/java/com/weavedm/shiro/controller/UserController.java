@@ -12,7 +12,7 @@ import com.weavedm.shiro.model.Oauth2User;
 import com.weavedm.shiro.service.UserService;
 
 /**
- * <p>User: Zhang Kaitao
+ * <p>User: scl
  * <p>Date: 14-2-14
  * <p>Version: 1.0
  */

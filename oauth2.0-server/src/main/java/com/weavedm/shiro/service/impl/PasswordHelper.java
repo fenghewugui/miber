@@ -11,7 +11,7 @@ import com.weavedm.shiro.model.Oauth2User;
 
 /**
  * <p>
- * User: Zhang Kaitao
+ * User: scl
  * <p>
  * Date: 14-1-28
  * <p>
@@ -43,7 +43,7 @@ public class PasswordHelper {
 
 		user.setSalt(randomNumberGenerator.nextBytes().toHex());
 
-		String newPassword = new SimpleHash(algorithmName, user.getPassword(), ByteSource.Util.bytes(user.getSalt()), hashIterations).toHex();
+		String newPassword = new SimpleHash(algorithmName, user.getPassword(), ByteSource.Util.bytes(user.getUsername()+user.getSalt()), hashIterations).toHex();
 
 		user.setPassword(newPassword);
 		return user;
